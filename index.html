@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ROSE AGE — 40대 피부, 관리법도 달라져야 할까요?</title>
+<meta name="description" content="지금 내 피부에 필요한 탄력 케어를 알아보세요. 1분 탄력 케어 체크로 나에게 맞는 홈케어 가이드를 확인하세요.">
+<meta name="theme-color" content="#F7F3EF">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="ROSE AGE">
+<meta property="og:title" content="ROSE AGE — 40대 피부, 관리법도 달라져야 할까요?">
+<meta property="og:description" content="지금 내 피부에 필요한 탄력 케어를 알아보세요. 1분 탄력 케어 체크로 나에게 맞는 홈케어 가이드를 확인하세요.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ROSE AGE — 40대 피부, 관리법도 달라져야 할까요?">
+<meta name="twitter:description" content="지금 내 피부에 필요한 탄력 케어를 알아보세요. 1분 탄력 케어 체크로 나에게 맞는 홈케어 가이드를 확인하세요.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@400;500;600&display=swap">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+/* =========================================================
+   ROSE AGE Landing — 디자인 토큰
+   색·서체를 바꾸려면 여기만 수정
+   ========================================================= */
+:root{
+  --ivory:#F7F3EF;
+  --ivory-2:#FBF8F5;
+  --rose:#E7C2C5;
+  --dusty:#C98F98;          /* 장식 전용 (글자색 X: 대비 부족) */
+  --burgundy:#682E42;       /* 버튼·강조 */
+  --burgundy-dark:#4F2032;
+  --charcoal:#292427;
+  --text-2:#4A3F44;
+  --text-3:#5A4E53;
+  --muted:#6B5F64;
+  --line:#E2D4CE;
+  --line-2:#DCCBC4;
+
+  --serif:'Noto Serif KR','Nanum Myeongjo',serif;
+  --sans:'Noto Sans KR',system-ui,-apple-system,sans-serif;
+  --display:'Cormorant Garamond','Noto Serif KR',serif;
+
+  --container:1180px;
+  --gutter:clamp(20px,5vw,48px);
+  --section-y:clamp(72px,10vw,136px);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--charcoal);font-family:var(--sans);line-height:1.7;word-break:keep-all;-webkit-font-smoothing:antialiased}
+img,svg{display:block}
+a{color:var(--burgundy)}
+a:hover{color:var(--burgundy-dark)}
+h1,h2,h3,p{margin:0}
+
+.container{max-width:var(--container);margin:0 auto}
+.section{padding:var(--section-y) var(--gutter)}
+.section--alt{background:var(--ivory-2);border-top:1px solid #EDE3DE}
+.section--dark{background:var(--charcoal);color:var(--ivory)}
+.section--rose{background:var(--rose);text-align:center}
+
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,96px);align-items:center}
+.stack{display:flex;flex-direction:column;gap:28px}
+.intro{display:flex;flex-direction:column;gap:24px;max-width:720px}
+
+.eyebrow{font-size:12px;font-weight:500;letter-spacing:.24em;color:var(--burgundy)}
+.section--dark .eyebrow{color:var(--rose)}
+.h1{font-family:var(--serif);font-weight:500;font-size:clamp(36px,5.2vw,64px);line-height:1.28;letter-spacing:-.02em}
+.h2{font-family:var(--serif);font-weight:500;font-size:clamp(28px,3.6vw,44px);line-height:1.38;letter-spacing:-.015em}
+.h3{font-family:var(--serif);font-weight:500;font-size:22px}
+.lead{font-size:17px;color:var(--text-2)}
+.section--dark .lead{color:#D9CDC8}
+.small{font-size:13px;color:var(--muted)}
+.label{font-size:12px;letter-spacing:.2em;color:var(--burgundy)}
+
+/* ---------- Button ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:60px;padding:0 36px;border:0;border-radius:999px;background:var(--burgundy);color:var(--ivory);font:500 17px/1 var(--sans);text-decoration:none;cursor:pointer;transition:background-color .25s,transform .25s,box-shadow .25s}
+.btn:hover{background:var(--burgundy-dark);color:var(--ivory);transform:translateY(-1px);box-shadow:0 10px 24px rgba(104,46,66,.22)}
+.btn--sm{min-height:44px;padding:0 22px;font-size:14px}
+.btn--block{width:100%;min-height:52px;font-size:16px}
+.btn:focus-visible,.faq__q:focus-visible,a:focus-visible{outline:2px solid var(--burgundy);outline-offset:3px}
+
+/* ---------- Header ---------- */
+.header{position:sticky;top:0;z-index:20;background:rgba(247,243,239,.94);border-bottom:1px solid #E5D8D2;backdrop-filter:blur(8px)}
+.header__inner{max-width:var(--container);margin:0 auto;padding:0 var(--gutter);height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.wordmark{font-family:var(--display);font-size:22px;font-weight:500;letter-spacing:.28em;color:var(--charcoal);text-decoration:none}
+
+/* ---------- Hero ---------- */
+.hero{padding:clamp(40px,7vw,96px) var(--gutter) clamp(64px,9vw,120px)}
+.hero__split{gap:clamp(40px,6vw,88px)}
+.hero__cta{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.hero__sub{font-size:clamp(17px,1.6vw,20px);color:var(--text-2);max-width:30em}
+.arch{border-radius:999px 999px 20px 20px;background:#EEE1DB;padding:clamp(36px,5vw,64px) clamp(20px,4vw,48px) 28px;aspect-ratio:4/5;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+.arch svg{width:100%;max-width:400px}
+.caption{margin-top:14px;font-size:12px;color:var(--muted);text-align:right;letter-spacing:.04em}
+
+/* ---------- Problem ---------- */
+.photo-ph{aspect-ratio:4/5;background:#EADCD6;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;padding:32px;text-align:center}
+.photo-ph p:last-child{font-size:14px;color:var(--text-3);max-width:18em}
+.voices{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.voices__lead{padding:18px 0 6px;font-size:13px;color:var(--muted)}
+.voice{padding:14px 0;border-bottom:1px solid var(--line);font-family:var(--serif);font-size:17px}
+.bridge{font-size:16px;color:var(--burgundy)}
+
+/* ---------- Education ---------- */
+.edu{display:flex;flex-direction:column;gap:clamp(40px,5vw,64px)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.fact{background:var(--ivory);padding:36px 32px;display:flex;flex-direction:column;gap:16px}
+.fact p:last-child{font-size:15px;color:var(--text-2)}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+.note{padding:22px 24px;border:1px solid var(--line);border-radius:4px;display:flex;flex-direction:column;gap:6px}
+.note--pending{border:1px dashed var(--dusty)}
+.note__t{font-size:13px;font-weight:500}
+.note--pending .note__t{color:var(--burgundy)}
+.note__b{font-size:14px;color:var(--text-3)}
+
+/* ---------- Product ---------- */
+.product-visual{aspect-ratio:1/1;border-radius:4px;background:#352E31;display:flex;align-items:center;justify-content:center;padding:32px;position:relative;overflow:hidden}
+.product-visual::before{content:"";position:absolute;width:72%;aspect-ratio:1/1;border-radius:999px;border:1px solid #5B4A50}
+.product-visual svg{width:100%;max-width:380px;position:relative}
+.keywords{display:flex;flex-direction:column;border-top:1px solid #4E4246}
+.keyword{padding:20px 0;border-bottom:1px solid #4E4246;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:6px 24px;align-items:baseline}
+.keyword__en{font-family:var(--display);font-size:21px;letter-spacing:.12em;color:var(--ivory)}
+.keyword__ko{font-size:14px;color:#C4B6B1}
+.specs{display:flex;flex-wrap:wrap;gap:10px 28px;font-size:14px;color:#D9CDC8}
+
+/* ---------- Trust ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px}
+.card{background:var(--ivory-2);border:1px solid var(--line);border-radius:6px;padding:30px 28px;display:flex;flex-direction:column;gap:14px}
+.card .h3{font-size:21px}
+.card__b{font-size:15px;color:var(--text-2)}
+.card ol{margin:0;padding-left:18px;font-size:15px;color:var(--text-2);display:flex;flex-direction:column;gap:4px}
+.pill-pending{align-self:flex-start;margin-top:auto;padding:6px 12px;border:1px dashed #9C6B74;border-radius:999px;font-size:12px;color:var(--burgundy)}
+
+/* ---------- FAQ ---------- */
+.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(32px,6vw,96px);align-items:start}
+.faq{display:flex;flex-direction:column;border-top:1px solid var(--line-2)}
+.faq__item{border-bottom:1px solid var(--line-2)}
+.faq__q{width:100%;min-height:64px;padding:20px 4px;display:flex;align-items:center;justify-content:space-between;gap:20px;background:transparent;border:0;cursor:pointer;text-align:left;font-family:var(--serif);font-size:18px;color:var(--charcoal);transition:background-color .2s}
+.faq__q:hover{background:#F1E8E3}
+.faq__icon{flex:none;font-family:var(--sans);font-size:22px;color:var(--burgundy)}
+.faq__a{padding:0 4px 24px;font-size:15px;color:var(--text-2);max-width:38em}
+.faq__a[hidden]{display:none}
+
+/* ---------- Final CTA ---------- */
+.final{padding:clamp(80px,11vw,152px) var(--gutter)}
+.final__inner{max-width:760px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:28px}
+.final__mark{font-family:var(--display);font-size:18px;letter-spacing:.3em;color:var(--burgundy)}
+.final .h2{font-size:clamp(28px,4vw,48px);line-height:1.36}
+.final .lead,.final .small{color:#3F3337}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.chip{padding:8px 16px;border-radius:999px;background:var(--ivory);font-size:14px}
+
+/* ---------- Footer ---------- */
+.footer{padding:56px var(--gutter) 120px;background:var(--charcoal);color:#C4B6B1}
+.footer .container{display:flex;flex-direction:column;gap:24px}
+.footer__mark{font-family:var(--display);font-size:20px;letter-spacing:.28em;color:var(--ivory)}
+.footer__links{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:13px}
+.footer__links a{color:var(--rose)}
+.footer p{font-size:13px;line-height:1.8}
+.footer .fine{font-size:12px;color:#A89A95}
+
+/* ---------- Mobile sticky CTA ---------- */
+.sticky-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:25;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(247,243,239,.96);border-top:1px solid #E5D8D2}
+@media (max-width:720px){.sticky-cta{display:flex}.hide-sm{display:none}}
+
+/* ---------- Form-URL notice ---------- */
+.notice{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);z-index:40;width:min(92vw,480px);background:var(--charcoal);color:var(--ivory);border-radius:10px;padding:20px 22px;display:flex;gap:16px;align-items:flex-start;box-shadow:0 18px 40px rgba(41,36,39,.28);animation:up .4s ease both}
+.notice[hidden]{display:none}
+.notice__t{font-size:15px;font-weight:500}
+.notice__b{font-size:13px;color:#D9CDC8;line-height:1.6;margin-top:6px}
+.notice__close{flex:none;width:44px;height:44px;margin:-10px -10px 0 0;display:flex;align-items:center;justify-content:center;background:transparent;border:0;color:var(--ivory);cursor:pointer}
+
+/* ---------- Motion ---------- */
+@keyframes up{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-10px) rotate(6deg)}}
+.in{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.12s}.d2{animation-delay:.24s}.d3{animation-delay:.36s}
+.float{animation:float 7s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.is-visible{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header__inner">
+    <a href="#top" class="wordmark">ROSE AGE</a>
+    <a href="#check" class="btn btn--sm hide-sm" data-cta="header">1분 탄력 케어 체크하기</a>
+  </div>
+</header>
+
+<main>
+
+<!-- 01 HERO -->
+<section id="top" class="hero">
+  <div class="container split hero__split">
+    <div class="stack">
+      <p class="eyebrow in">ROSE AGE · DAILY FIRMING CARE</p>
+      <h1 class="h1 in d1">40대 피부,<br>관리법도 달라져야<br>할까요?</h1>
+      <p class="hero__sub in d2">지금 내 피부에 필요한 탄력 케어를 알아보세요.</p>
+      <div class="hero__cta in d3">
+        <a href="#check" class="btn" data-cta="hero">1분 탄력 케어 체크하기
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <p class="small">3문항 · 약 1분 · 체크 결과와 관리 가이드는 이메일로</p>
+      </div>
+    </div>
+    <div class="in d2">
+      <div class="arch">
+        <!-- TODO: 제품 촬영 컷으로 교체 → <img src="hero.jpg" alt="..."> -->
+        <svg viewBox="0 0 400 500" role="img" aria-label="장미 꽃잎 사이에 놓인 ROSE AGE 앰플 보틀 일러스트">
+          <ellipse cx="200" cy="452" rx="160" ry="14" fill="#292427" opacity=".07"/>
+          <path d="M52 440 C 64 398, 118 392, 134 430 C 118 456, 76 464, 52 440 Z" fill="#E7C2C5"/>
+          <path d="M94 456 C 110 432, 150 436, 160 456 C 140 471, 110 471, 94 456 Z" fill="#C98F98" opacity=".75"/>
+          <path d="M298 446 C 310 410, 354 400, 368 432 C 354 459, 318 466, 298 446 Z" fill="#C98F98" opacity=".85"/>
+          <path d="M266 458 C 276 440, 304 440, 312 458 C 298 468, 278 468, 266 458 Z" fill="#E7C2C5"/>
+          <path class="float" d="M312 150 C 322 124, 356 120, 364 144 C 352 162, 326 166, 312 150 Z" fill="#E7C2C5"/>
+          <path class="float" style="animation-delay:-3s" d="M46 230 C 54 210, 80 208, 86 226 C 76 240, 56 242, 46 230 Z" fill="#C98F98" opacity=".7"/>
+          <rect x="135" y="215" width="130" height="235" rx="26" fill="#F3E0E1" stroke="#C98F98" stroke-width="1.5"/>
+          <path d="M136.5 292 H263.5 V424 a24.5 24.5 0 0 1 -24.5 24.5 H161 a24.5 24.5 0 0 1 -24.5 -24.5 Z" fill="#E4AEB6" opacity=".7"/>
+          <rect x="150" y="232" width="7" height="196" rx="3.5" fill="#FFFFFF" opacity=".6"/>
+          <rect x="172" y="184" width="56" height="38" rx="6" fill="#ECCBCE" stroke="#C98F98" stroke-width="1.5"/>
+          <rect x="164" y="160" width="72" height="30" rx="4" fill="#292427"/>
+          <path d="M176 160 V102 a24 24 0 0 1 48 0 V160 Z" fill="#682E42"/>
+          <path d="M181 124 H219 M181 134 H219" stroke="#531F33" stroke-width="2"/>
+          <rect x="158" y="318" width="84" height="80" rx="3" fill="#F7F3EF"/>
+          <text x="200" y="351" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="15" letter-spacing="3" fill="#682E42">ROSE AGE</text>
+          <line x1="184" y1="362" x2="216" y2="362" stroke="#C98F98"/>
+          <text x="200" y="380" text-anchor="middle" font-family="Noto Sans KR, sans-serif" font-size="8" letter-spacing="2.4" fill="#292427">AMPOULE</text>
+        </svg>
+      </div>
+      <p class="caption">Visual — 제품 촬영 컷으로 교체 예정</p>
+    </div>
+  </div>
+</section>
+
+<!-- 02 PROBLEM / EMPATHY -->
+<section id="problem" class="section section--alt">
+  <div class="container split">
+    <!-- TODO: 인물 사진으로 교체 -->
+    <div class="photo-ph reveal">
+      <svg width="120" height="150" viewBox="0 0 120 150" fill="none" stroke="#9C6B74" stroke-width="1.2" aria-hidden="true"><ellipse cx="60" cy="66" rx="44" ry="58"/><ellipse cx="60" cy="66" rx="36" ry="50" opacity=".5"/><path d="M60 124 V146 M40 146 H80"/></svg>
+      <p class="label">PHOTO</p>
+      <p>자연광 아래 거울을 바라보는 40대 여성 — 피부결이 그대로 보이는 감성 클로즈업</p>
+    </div>
+    <div class="stack">
+      <p class="eyebrow reveal">01 — THE CHANGE</p>
+      <h2 class="h2 reveal">예전과 똑같이 관리하는데,<br>피부는 달라 보이나요?</h2>
+      <p class="lead reveal">거울 속 피부가 어제와 다르게 느껴지는 순간. 팔자주름이 더 신경 쓰이고, 화장이 예전처럼 매끄럽게 표현되지 않을 때가 있습니다.</p>
+      <div class="voices reveal">
+        <p class="voices__lead">이런 생각, 해보신 적 있나요?</p>
+        <p class="voice">“분명 똑같이 관리하는데 왜 피부가 다르지?”</p>
+        <p class="voice">“화장할 때 주름이 너무 신경 쓰여.”</p>
+        <p class="voice">“탄력 앰플 하나 바른다고 달라질까?”</p>
+        <p class="voice">“피부과까지 가야 하나?”</p>
+      </div>
+      <p class="bridge reveal">관리를 소홀히 해서가 아니라, 피부가 달라지는 시기이기 때문일 수 있어요.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 EDUCATION -->
+<section id="understand" class="section">
+  <div class="container edu">
+    <div class="intro">
+      <p class="eyebrow reveal">02 — UNDERSTANDING</p>
+      <h2 class="h2 reveal">피부가 달라지는 시기,<br>관리도 달라질 수 있습니다.</h2>
+      <p class="lead reveal">나이가 들면서 피부의 수분 상태와 탄력 관련 구조에도 변화가 나타납니다. 지금 피부 상태에 맞는 관리 습관을 살펴볼 때입니다.</p>
+    </div>
+    <div class="facts reveal">
+      <div class="fact">
+        <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#682E42" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 6 C 24 6, 11 21, 11 30 a13 13 0 0 0 26 0 C 37 21, 24 6, 24 6 Z"/><path d="M18 31 a6 6 0 0 0 6 6"/></svg>
+        <p class="label">HYDRATION</p>
+        <h3 class="h3">수분을 지키는 힘</h3>
+        <p>피부 바깥층이 수분을 머금고 지키는 능력은 나이와 환경에 따라 달라질 수 있어, 건조함이 이전보다 쉽게 느껴지기도 합니다.</p>
+      </div>
+      <div class="fact">
+        <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#682E42" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16 C 12 10, 18 22, 24 16 S 36 10, 42 16"/><path d="M6 26 C 12 20, 18 32, 24 26 S 36 20, 42 26"/><path d="M6 36 C 12 30, 18 42, 24 36 S 36 30, 42 36"/></svg>
+        <p class="label">FIRMNESS</p>
+        <h3 class="h3">탄력을 받치는 구조</h3>
+        <p>피부 속 콜라겐·엘라스틴 같은 구조 성분은 시간이 지나며 변화하는 것으로 알려져 있으며, 처짐이 이전보다 눈에 띌 수 있습니다.</p>
+      </div>
+      <div class="fact">
+        <svg width="44" height="44" viewBox="0 0 48 48" fill="none" stroke="#682E42" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M15 20 C 19 18, 22 22, 26 20 M17 27 C 21 25, 25 29, 31 27"/></svg>
+        <p class="label">TEXTURE</p>
+        <h3 class="h3">달라지는 피부결</h3>
+        <p>건조함과 탄력 변화가 함께 나타나면 잔주름과 결이 도드라져 보여, 메이크업 표현에도 영향을 줄 수 있습니다.</p>
+      </div>
+    </div>
+    <div class="notes reveal">
+      <div class="note">
+        <p class="note__t">이 섹션의 내용</p>
+        <p class="note__b">피부 노화에 관한 일반적인 정보이며, 특정 제품의 효능을 뜻하지 않습니다. [참고 문헌 출처 표기 예정]</p>
+      </div>
+      <div class="note note--pending">
+        <p class="note__t">제품 효능 정보</p>
+        <p class="note__b">ROSE AGE 앰플의 효능은 시험 자료와 기능성 심사·보고가 확보된 뒤 아래 ‘확인할 수 있는 정보’에서 따로 안내합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 SOLUTION / PRODUCT -->
+<section id="product" class="section section--dark">
+  <div class="container split">
+    <!-- TODO: 앰플·스포이드·세럼 텍스처 컷으로 교체 -->
+    <div class="product-visual reveal">
+      <svg viewBox="0 0 400 420" role="img" aria-label="스포이드를 들어 올린 앰플과 세럼 방울, 장미 꽃잎 일러스트">
+        <path d="M70 380 C 84 344, 132 340, 146 372 C 132 396, 92 402, 70 380 Z" fill="#C98F98" opacity=".9"/>
+        <path d="M286 384 C 298 352, 340 346, 352 374 C 340 398, 304 404, 286 384 Z" fill="#E7C2C5" opacity=".85"/>
+        <rect x="140" y="200" width="120" height="196" rx="24" fill="#4A3A40" stroke="#C98F98" stroke-width="1.3"/>
+        <path d="M141.3 262 H258.7 V372 a22.7 22.7 0 0 1 -22.7 22.7 H164 a22.7 22.7 0 0 1 -22.7 -22.7 Z" fill="#C98F98" opacity=".55"/>
+        <rect x="154" y="216" width="6" height="160" rx="3" fill="#FFFFFF" opacity=".25"/>
+        <rect x="176" y="176" width="48" height="30" rx="5" fill="#5B4A50" stroke="#C98F98" stroke-width="1.3"/>
+        <rect x="164" y="300" width="72" height="62" rx="3" fill="#F7F3EF"/>
+        <text x="200" y="327" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="13" letter-spacing="2.6" fill="#682E42">ROSE AGE</text>
+        <text x="200" y="345" text-anchor="middle" font-family="Noto Sans KR, sans-serif" font-size="7" letter-spacing="2" fill="#292427">AMPOULE</text>
+        <g class="float" style="animation-duration:9s">
+          <g transform="rotate(14 250 90)">
+            <rect x="241" y="58" width="18" height="92" rx="9" fill="#F3E0E1" opacity=".9"/>
+            <rect x="234" y="44" width="32" height="18" rx="3" fill="#5B4A50"/>
+            <path d="M238 46 V12 a12 12 0 0 1 24 0 V46 Z" fill="#682E42"/>
+          </g>
+          <path d="M235 158 C 235 158, 226 171, 226 177 a9 9 0 0 0 18 0 C 244 171, 235 158, 235 158 Z" fill="#E7C2C5"/>
+        </g>
+      </svg>
+    </div>
+    <div class="stack">
+      <p class="eyebrow reveal">03 — THE RITUAL</p>
+      <h2 class="h2 reveal">매일의 피부를 위한<br>로즈 탄력 케어</h2>
+      <p class="lead reveal">장미에서 영감을 받은 감각적인 스킨케어 루틴. 피부의 보습과 데일리 케어에 집중하는 앰플을 제안합니다.</p>
+      <div class="keywords reveal">
+        <div class="keyword"><p class="keyword__en">ROSE-INSPIRED SKINCARE</p><p class="keyword__ko">[장미 유래 성분 확정 후 설명 업데이트]</p></div>
+        <div class="keyword"><p class="keyword__en">DAILY FIRMING CARE</p><p class="keyword__ko">[기능성 심사·보고 결과에 맞춰 표현 확정]</p></div>
+        <div class="keyword"><p class="keyword__en">HYDRATION RITUAL</p><p class="keyword__ko">[제형·사용감 확정 후 설명 업데이트]</p></div>
+      </div>
+      <div class="specs reveal">
+        <span>출시 예정가 39,000원</span>
+        <span>용량 [__ml]</span>
+        <span>기능성 [심사·보고 후 표기]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 TRUST / EVIDENCE -->
+<section id="trust" class="section">
+  <div class="container edu">
+    <div class="intro">
+      <p class="eyebrow reveal">04 — TRANSPARENCY</p>
+      <h2 class="h2 reveal">좋아 보이는 약속보다,<br>확인할 수 있는 정보</h2>
+      <p class="lead reveal">제품의 성분, 사용법, 테스트 결과 등 확인할 수 있는 정보를 투명하게 안내합니다.</p>
+    </div>
+    <div class="cards reveal">
+      <div class="card">
+        <p class="label">INGREDIENTS</p>
+        <h3 class="h3">주요 성분 설명</h3>
+        <p class="card__b">핵심 성분과 각 성분의 역할, 전성분 목록을 공개합니다.</p>
+        <span class="pill-pending">성분 확정 후 업데이트 예정</span>
+      </div>
+      <div class="card">
+        <p class="label">TEST RESULTS</p>
+        <h3 class="h3">실제 시험 결과</h3>
+        <p class="card__b">시험 기관, 대상, 기간, 방법을 함께 표기한 결과만 게재합니다.</p>
+        <span class="pill-pending">검증 자료 업데이트 예정</span>
+      </div>
+      <div class="card">
+        <p class="label">HOW TO USE</p>
+        <h3 class="h3">제품 사용 방법</h3>
+        <ol>
+          <li>세안 후 토너로 피부 결 정돈</li>
+          <li>앰플 [_]방울을 얼굴 전체에 펴 바르기</li>
+          <li>가볍게 감싸 흡수 후 크림으로 마무리</li>
+        </ol>
+        <span class="pill-pending">예시 루틴 · 제품 확정 시 수정</span>
+      </div>
+      <div class="card">
+        <p class="label">REVIEWS</p>
+        <h3 class="h3">검증된 사용자 후기</h3>
+        <p class="card__b">출시 후 실제 구매 고객의 후기만, 편집 없이 게재합니다.</p>
+        <span class="pill-pending">출시 후 게재 예정</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 FAQ -->
+<section id="faq" class="section section--alt">
+  <div class="container faq-grid">
+    <div class="stack" style="gap:24px">
+      <p class="eyebrow reveal">05 — QUESTIONS</p>
+      <h2 class="h2 reveal">탄력 앰플,<br>나에게도 필요할까요?</h2>
+      <p class="lead reveal" style="font-size:16px">고르기 전에 자주 궁금해하시는 것들을 정리했어요.</p>
+    </div>
+    <div class="faq" data-faq>
+      <div class="faq__item">
+        <button type="button" class="faq__q" aria-expanded="true" aria-controls="faq-a1" id="faq-q1">탄력 앰플은 어떤 기준으로 선택해야 하나요?<span class="faq__icon" aria-hidden="true">−</span></button>
+        <p class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1">먼저 지금 가장 신경 쓰이는 고민(건조함, 탄력, 잔주름 등)을 정리해보세요. 그다음 전성분, 기능성 화장품 심사·보고 여부, 사용감, 기존 루틴과의 조합을 확인하면 선택에 도움이 됩니다. 1분 체크는 그 첫 단계인 ‘내 고민 정리’를 돕습니다.</p>
+      </div>
+      <div class="faq__item">
+        <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">민감한 피부도 사용할 수 있나요?<span class="faq__icon" aria-hidden="true">+</span></button>
+        <p class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden>피부 상태는 사람마다 달라 단정해서 말씀드릴 수 없어요. ROSE AGE 앰플의 피부 자극 테스트 결과는 확보되는 대로 이곳에 공개합니다. 새 제품은 귀 뒤나 팔 안쪽에 소량 먼저 사용해보시고, 이상이 느껴지면 사용을 중단한 뒤 전문의와 상담하세요. [피부 자극 테스트 결과 업데이트 예정]</p>
+      </div>
+      <div class="faq__item">
+        <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">기존 스킨케어와 함께 사용해도 되나요?<span class="faq__icon" aria-hidden="true">+</span></button>
+        <p class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden>앰플은 일반적으로 토너 다음, 크림 전 단계에서 사용합니다. 레티놀이나 고농도 각질 케어 제품처럼 자극이 될 수 있는 제품과 함께 쓸 때는 사용 빈도를 조절하는 것이 좋아요. ROSE AGE 앰플의 권장 사용법은 제품 확정 후 안내드립니다.</p>
+      </div>
+      <div class="faq__item">
+        <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">사용 전 어떤 정보를 확인하면 좋나요?<span class="faq__icon" aria-hidden="true">+</span></button>
+        <p class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4" hidden>전성분 목록, 기능성 화장품 해당 여부와 심사·보고 내용, 사용기한과 보관 방법, 사용 시 주의사항을 확인하세요. ROSE AGE는 이 정보를 출시 시점에 이 페이지에서 모두 공개합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 FINAL CTA -->
+<section id="check" class="final section--rose">
+  <div class="final__inner">
+    <p class="final__mark reveal">ROSE AGE</p>
+    <h2 class="h2 reveal">지금 내 피부에 필요한<br>관리부터 알아보세요.</h2>
+    <p class="lead reveal">1분 체크로 피부 고민을 정리하고, 나에게 맞는 홈케어 가이드를 확인해보세요.</p>
+    <div class="chips reveal">
+      <span class="chip">가장 신경 쓰이는 피부 고민</span>
+      <span class="chip">지금 쓰는 스킨케어</span>
+      <span class="chip">탄력 케어에서 중요한 것</span>
+    </div>
+    <a href="#check" class="btn" data-cta="final">1분 탄력 케어 체크하기
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <p class="small" style="max-width:34em">이메일은 체크 결과와 관리 가이드 발송에만 사용되며, 마케팅 정보 수신 동의는 설문에서 별도로 선택하실 수 있어요.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p class="footer__mark">ROSE AGE</p>
+    <div class="footer__links">
+      <a href="#">개인정보처리방침 [링크 연결]</a>
+      <a href="#">이용약관 [링크 연결]</a>
+    </div>
+    <p>[상호] · 대표 [이름] · 사업자등록번호 [000-00-00000] · 통신판매업 신고 [번호] · 고객센터 [연락처]</p>
+    <p class="fine">본 페이지의 제품 정보는 출시 전 기획 단계 내용으로, 확정 시 변경될 수 있습니다.</p>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY CTA -->
+<div class="sticky-cta">
+  <a href="#check" class="btn btn--block" data-cta="sticky_mobile">1분 탄력 케어 체크하기</a>
+</div>
+
+<!-- FORM URL NOTICE (Google Form URL 미설정 시에만 표시) -->
+<div class="notice" role="status" aria-live="polite" hidden data-notice>
+  <div style="flex:1">
+    <p class="notice__t">설문 링크가 아직 연결되지 않았어요</p>
+    <p class="notice__b">index.html 하단 CONFIG의 FORM_URL에 Google Form 주소를 넣으면 모든 체크 버튼이 설문으로 바로 연결됩니다.</p>
+  </div>
+  <button type="button" class="notice__close" aria-label="안내 닫기" data-notice-close>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+</div>
+
+<script>
+/* =========================================================
+   CONFIG — 여기만 수정
+   ========================================================= */
+const CONFIG = {
+  // Google Form 주소 (예: 'https://forms.gle/xxxxxxxx'). 비워두면 안내 토스트 표시
+  FORM_URL: '',
+  // 광고 UTM 파라미터를 폼 링크에 그대로 넘길지 여부
+  PASS_UTM: true,
+};
+
+(function () {
+  const hasForm = /^https?:\/\//i.test(CONFIG.FORM_URL.trim());
+
+  // --- 폼 URL 구성 (UTM 전달) ---
+  function buildFormUrl() {
+    const url = new URL(CONFIG.FORM_URL.trim());
+    if (CONFIG.PASS_UTM) {
+      const params = new URLSearchParams(location.search);
+      params.forEach((v, k) => { if (k.startsWith('utm_')) url.searchParams.set(k, v); });
+    }
+    return url.toString();
+  }
+
+  // --- 측정: GTM dataLayer 로 cta_click 이벤트 전송 ---
+  function track(id) {
+    try {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'cta_click', cta_id: id, cta_label: '1분 탄력 케어 체크하기' });
+    } catch (e) {}
+  }
+
+  // --- CTA 연결 ---
+  const notice = document.querySelector('[data-notice]');
+  let noticeTimer;
+  function showNotice() {
+    notice.hidden = false;
+    clearTimeout(noticeTimer);
+    noticeTimer = setTimeout(() => { notice.hidden = true; }, 7000);
+  }
+  document.querySelector('[data-notice-close]').addEventListener('click', () => { notice.hidden = true; });
+
+  document.querySelectorAll('[data-cta]').forEach((el) => {
+    if (hasForm) {
+      el.href = buildFormUrl();
+      el.target = '_blank';
+      el.rel = 'noopener';
+    }
+    el.addEventListener('click', (e) => {
+      track(el.dataset.cta);
+      if (!hasForm) { e.preventDefault(); showNotice(); }
+    });
+  });
+
+  // --- FAQ 아코디언 (한 번에 하나만 열림) ---
+  const faq = document.querySelector('[data-faq]');
+  faq.querySelectorAll('.faq__q').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const willOpen = btn.getAttribute('aria-expanded') !== 'true';
+      faq.querySelectorAll('.faq__q').forEach((b) => {
+        const open = b === btn && willOpen;
+        b.setAttribute('aria-expanded', String(open));
+        b.querySelector('.faq__icon').textContent = open ? '−' : '+';
+        document.getElementById(b.getAttribute('aria-controls')).hidden = !open;
+      });
+    });
+  });
+
+  // --- 스크롤 등장 애니메이션 ---
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach((el) => io.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add('is-visible'));
+  }
+})();
+</script>
+</body>
+</html>
